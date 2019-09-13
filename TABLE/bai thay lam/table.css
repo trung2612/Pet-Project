@@ -1,0 +1,138 @@
+body {
+	height: 100vh;
+	margin: 0;
+	flex-direction: column;
+}
+
+.wrapper {
+	margin: 30px auto 0;
+	width: 60%;
+	text-align: center;
+}
+
+input[type='search'] {
+	padding: 0 5px;
+	opacity: 0;
+	border: 1px solid #009688;
+	transform: translateY(70px);
+	width: 153px;
+	height: 25px;
+	animation: fadeInUp 1s 0.5s;
+	animation-fill-mode: forwards;
+}
+
+input[type='search']:focus {
+	outline: none;
+}
+
+@keyframes fadeInUp {
+  0% {
+  	opacity: 0;
+  	transform: translate3d(0, 60px, 0);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translate3d(0, 35px, 0);
+    width: 153px;
+    border-radius: unset;
+  }
+
+  100% {
+  	opacity: 1;
+    transform: translate3d(0, 35px, 0);
+  	width: 200px;
+  	border-radius: 12px;
+  }
+}
+
+h1 {
+	display: inline-block;
+	font-size: 50px;
+	color: #009688;
+	font-weight: bold;
+	border-top: 1px solid #009688;
+}
+
+table {
+	width: 100%;
+}
+
+th, td {
+	height: 50px;
+}
+
+th {
+	background-color: #009688a6;
+	color: white;
+	cursor: pointer;
+}
+
+th:first-child {
+	border-top-left-radius: 10px;
+}
+
+th:last-child {
+	border-top-right-radius: 10px;
+}
+
+th.ascending::after {
+	content: '\f0dd';
+  	font-family: 'Font Awesome 5 Free';
+  	font-weight: 900;
+  	float: right;
+  	padding-right: 5px;
+  	font-size: 12px;
+  	line-height: 18px;
+}
+
+th.descending::after {
+	content: '\f0de';
+  	font-family: 'Font Awesome 5 Free';
+  	font-weight: 900;
+  	float: right;
+  	padding-right: 5px;
+  	font-size: 12px;
+  	line-height: 18px;
+}
+
+th.normal::after {
+	content: '\f0dc';
+  	font-family: 'Font Awesome 5 Free';
+  	font-weight: 900;
+  	float: right;
+  	padding-right: 5px;
+  	font-size: 12px;
+  	line-height: 18px;
+}
+
+td {
+	text-align: center;
+}
+
+tr:nth-child(odd) {
+	background-color: #f7f7f7;
+}
+
+tr:nth-child(even) {
+	background-color: #ededed;
+}
+
+tr:nth-child(odd):hover {
+	background-color: #00968814;
+}
+
+tr:nth-child(even):hover {
+	background-color: #00968834;
+}
+
+i.fas {
+	float: right;
+	padding-right: 10px;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+i.fa-sort-up, i.fa-sort-down {
+	display: none;
+}

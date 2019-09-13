@@ -1,0 +1,40 @@
+body {
+	background-image: url('http://www.fullhdwpp.com/wp-content/uploads/cherry-blossoms-by-the-bench-16_www.FullHDWpp.com_.jpg');
+/*	background-image: opacity: 0.5;*/
+	opacity: 0.9;
+}
+table {
+	font-family: Arial, sans-serif;
+	width: 80%;
+	text-align: center;
+	margin-top: 80px;
+	margin-left: 10%;
+}
+.le {
+	text-align: left;
+}
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th	{
+	background: #4CAF50;
+	color: white;
+}
+td, th {
+	padding: 10px;
+}
+
+tr:nth-child(even) {
+	background: #dddddd;
+}tr:nth-child(odd) {
+	background: white;
+}
+
+tr:hover {
+	background: #4CAF50;
+}
+img {
+	width: 100%;
+	opacity: 0.4;
+}

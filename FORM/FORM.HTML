@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo Form</title>
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+	<form>
+		<fieldset class="form" id="form2">
+			<legend>thông tin cá nhân</legend>
+			<div class="row">
+				<label for="name" class="title">Họ tên<span class="req">*</span></label>
+				<input id="name" type="text" name="name" placeholder="Nguyen Van A" ><!--  thêm dòng chữ ví dụ -->
+				<span style="opacity: 0" id="span1">* nhập vào tên</span>
+				<br>
+			</div>
+
+			<div class="row">
+				<label for="email" class="title">Email<span class="req">*</span></label>
+				<input id="email" type="text" name="email" placeholder="techmaster@gmail.com" >
+				<span style="opacity: 0" id="span2">* nhập vào email</span>
+				<br>
+			</div>
+
+			<div class="row">
+				<label for="phone" class="title">Số điện thoại<span class="req">*</span></label>
+				<input id="phone" type="text" name="phone" placeholder="0123456789" maxlength="10" >
+				<span style="opacity: 0" id="span3">* nhập vào số điện thoại</span>
+				<br>
+			</div>
+		</fieldset>
+
+		<fieldset class="form" id="form2">
+			<legend>Đánh giá học viên</legend>
+
+			<div class="row2">
+				<p>1. Học viên của bạn là ai?
+					<select name="list_name">
+						<option value="Đức Thiện">Đức thiện</option>
+						<option value="Văn Quyết">Văn Quyết</option>
+						<option value="Duy Anh">Duy Anh</option>
+					</select>
+				</p>
+			</div>
+			
+			<div class="row2">
+				<p>2. Bạn đánh giá học viên thế nào?</p>
+				<div>
+					<input type="radio" name="quality">5 sao
+					<input type="radio" name="quality">4 sao
+					<input type="radio" name="quality">3 sao
+					<input type="radio" name="quality">2 sao
+					<input type="radio" name="quality">1 sao
+				</div>
+			</div>
+			
+			<div class="row2">
+				<p>3. Ưu điểm của học viên?</p>
+				<div>
+					<input type="checkbox" name="Chăm chỉ">Chăm chỉ
+					<input type="checkbox" name="Có tố chất">Có tố chất
+					<input type="checkbox" name="Hòa đồng">Hòa đồng
+				</div>
+			</div>
+		
+			<div class="row2">
+				<p>4. Đánh giá thêm(nhiều nhất 150 ký tự)</p>
+				<input type="text" name="đánh giá thêm">
+			</div>
+		</fieldset>		
+
+		<input id="submit" type="submit" name="submit" value="submit">
+		<a href="file:///C:/Users/trung/Documents/GitHub/trung2612.github.io/pet%20PROJECT/FORM/FORM.HTML">back</a>
+	</form>
+
+	<script type="text/javascript" src="form.js"></script>
+</body>
+</html>

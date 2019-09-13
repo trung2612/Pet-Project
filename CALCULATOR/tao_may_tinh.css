@@ -1,0 +1,38 @@
+body{
+	padding:200px 0px 0px 400px;
+}
+
+#khung{
+	margin:0px;
+	padding:30px 20px 0px 20px;
+	border: 1px solid #333;
+	width: 287px;
+}
+.button{
+	float:left;
+	text-align:center;
+	margin:0px 0px 15px 15px;
+	padding:10px 10px 10px 10px;
+	background-color:#666;
+	color:#fff;
+	width:40px;
+}
+
+#display{
+	margin:0px 0px 15px 0px;
+	padding:10px;
+	text-align:right;
+	width:265px;	
+	outline:none;
+	border:1px solid #333;
+}
+
+.button.first{margin-left:0px}
+
+.clear_all{
+	clear:both;
+}
+
+.button:hover{
+	background-color:#333;
+}
