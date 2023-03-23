@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .wrapper{
+            position: relative;
+        }
+        .name-input{
+            padding: 0.6rem 1.2rem;
+            color: #444;
+            font-size: 1.5rem;
+        }
+        .name-label{
+            position: absolute;
+            top: 0.6rem;
+            left: 1.2rem;
+            color: rgba(0, 0,0, 0.5);
+            font-size: 1.5rem;
+            transition: 0.4s all;
+            padding-inline: 0.25rem;
+            
+        }
+        .name-input:focus~.name-label, .name-input:valid~.name-label{
+            top: -0.5rem;
+            left: 0.5rem;
+            background-color: #fff;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <input type="text" class="name-input" name="name" required="required" />
+        <label class="name-label" for="name">Name</label>
+    </div>
+</body>
+</html>
