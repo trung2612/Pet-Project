@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(90deg, rebeccapurple, #2cd9ff);
+        background-size: 400% 400%;
+        animation: cutay 2.4s infinite ease-in-out;
+      }
+
+      .container {
+        /* width: min(100%-30px, 1140px); */
+        /* margin-inline: auto; */
+        height: 300px;
+        background: linear-gradient(90deg, #2cd9ff, #7effb2);
+        background-size: 400% 400%;
+        animation: cutay 2.4s infinite ease-in-out;
+      }
+      @keyframes cutay {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+  </body>
+</html>
