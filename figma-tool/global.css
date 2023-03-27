@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-lato: Lato;
+    --font-fontawesome5brandsregular: FontAwesome5BrandsRegular;
+  
+    /* font sizes */
+    --font-size-5xl: 1.5rem;
+    --font-size-lg: 1.13rem;
+    --font-size-sm: 0.88rem;
+    --font-size-36xl: 3.44rem;
+    --font-size-xl: 1.25rem;
+    --font-size-base: 1rem;
+    --font-size-53xl: 4.5rem;
+    --font-size-17xl: 2.25rem;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-darkslategray-100: #464646;
+    --color-darkslategray-200: #414141;
+    --color-hotpink-100: #fe50a6;
+    --color-hotpink-200: #fe4fa7;
+    --color-ghostwhite: #f6fafd;
+    --color-dimgray: #6c6c6c;
+  
+    /* border radiuses */
+    --br-9xs: 4px;
+  }
+  
