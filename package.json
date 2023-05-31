@@ -1,0 +1,22 @@
+{
+  "name": "pet-project",
+  "version": "1.0.0",
+  "description": "trungnh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trung2612/Pet-Project.git"
+  },
+  "author": "trungnh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trung2612/Pet-Project/issues"
+  },
+  "homepage": "https://github.com/trung2612/Pet-Project#readme",
+  "dependencies": {
+    "firebase-tools": "^12.2.1"
+  }
+}
